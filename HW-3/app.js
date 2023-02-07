@@ -15,31 +15,33 @@
 // * 1) *
 // Via "for" console every odd number from 20
 
-//  * for:
+//  2.1) for:
 
-// let number1 = 0;
+let number1 = 0;
 
-
-// for (let number1 = 0; number1 <=20 ; number1++){
-//     if (number1 %2 !==0){
-//         console.log ("[НЕЧЕТНЫЕ ЧИСЛА]" ,number1);
-//     }else{
-//         console.log ("[Четные числа]" , number1);
-//     }
-// }
-
-// * while:
-
-let number2 = 20;
-// let i = 0
-
-while (number2%2 !== 0){
-    i++;
-    // number2 ++;
-    console.log(number2);
+for (let number1 = 0; number1 <=20 ; number1++){
+    if (number1 %2 !==0){
+        console.log ("[НЕЧЕТНЫЕ ЧИСЛА - ЦИКЛ FOR]" ,number1);
+    }else{
+    }
 }
 
-// * Face-control:
+// 2.2) while:
+
+let number2 = 0;
+
+while (number2 < 20){
+
+    number2 ++;
+
+    if(number2%2!=0){
+        console.log("[НЕЧЕТНЫЕ ЧИСЛА - ЦИКЛ WHILE]" ,number2);
+    }
+    else{
+    }
+}
+
+// 3) Face-control:
 
 let userName = prompt ("Hello ! What is your name ");
 
@@ -49,41 +51,51 @@ while(userName === "" || userName === null){
 
 alert(`${userName}  , очень приятно !` );
 
+let question  =  confirm (`${userName  } , cкажешь свой возраст?`);
 
-const AGE = 18;
-let age;
-let i = 0;
+if (question == true){
 
+    alert(" Ура, ");
 
-while ( age != AGE || age === "" || age === null){
-
-    i++;
-
-    age = +prompt ("How old are you ?");
-
+    const AGE = 18;
+    let age;
+    let i = 0;
     
-
-    if(age ===AGE){
-        console.log ("18 ask him about his age");
-        alert(age + " Как раз вовремя!");
+    while ( age != AGE || age === "" || age === null){
+    
+        i++;
+    
+        age = +prompt ("How old are you ?");
+    
+        if(age ===AGE){
+            console.log ("18 ask him about his age");
+            alert(age + " Как раз вовремя!");
+        }
+    
+        else if(age < AGE){
+            console.log ("[ < AGE ] " ,"Get over here");
+            alert(age + " Ты еще мал!");
+        }
+    
+        else if(age > AGE && age < 100){
+            console.log ("[ > AGE ] " ,"Get out of here");
+            alert(age + " Опоздал!");
+        }
+        else{
+            console.log (" [ Oups... ] ");
+            alert("Err... Уже вообще поздно!")
+        }
     }
-
-    else if(age < AGE){
-        console.log ("[ < AGE ] " ,"Get over here");
-        alert(age + " Ты еще мал!");
-    }
-
-    else if(age > AGE && age < 100){
-        console.log ("[ > AGE ] " ,"Get out of here");
-        alert(age + " Опоздал!");
-    }
-    else{
-        console.log (" [ Oups... ] ");
-        alert("Err... Уже вообще поздно!")
-    }
+    console.log ("[Количество вводов ] " + i);
+}
+else{
+    alert(" Ну ладно...")
 }
 
-console.log ("[Количество вводов ] " + i);
+
+
+
+
 
 
 
