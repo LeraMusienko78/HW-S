@@ -138,7 +138,7 @@ let j;
 
 nextPrime:
 
-for (i = 2; i < num ; i++) {
+for (i = 2; i <= num ; i++) {
 
     for (j = 2 ; j < i ; j++){
         if ((i % j == 0))
@@ -148,6 +148,8 @@ for (i = 2; i < num ; i++) {
 }
 
 // 5) Get number from user and get factorial of this number
+
+let isOn 
 
 let userNum = +prompt(`${userName} , Скажи свое число.`);
 alert(userNum);

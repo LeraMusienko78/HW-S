@@ -49,18 +49,39 @@
 
 
 // let isOn = true;
-let num = 10;
-let i = 2;
-let j = 2; 
+// let num = 10;
 
-for (i = 2 ; i < 10 ; i++){
-    for( j = 2 ; j < i ; i++){
-        if (i%j == 0){
-            continue;
-        }
-        console.log(i);
+// nextPrime :
+
+// for (let i = 2 ; i < num ; i++ ){
+
+//     for(let j = 2 ; j < i ; j++){
+
+//         if (i % j === 0){
+
+//            continue nextPrime;
+//         }
+       
+//     }console.log(i);
+// } 
+
+let isOn = true;
+
+while(isOn){
+
+    let number = +prompt ("назови число");
+
+    if ( number != NaN ){
+
+        // console.log(number);
+        isOn = true;
+
+    }else{
+        console.log(number);
     }
 }
+
+
 
 
 
