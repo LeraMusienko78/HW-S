@@ -19,25 +19,29 @@
 
 //  2.1) for:
 
-let number1 = 0;
+let num1 = 20;
+let counter = 0;
 
-for (let number1 = 0; number1 <=20 ; number1++){
-    if (number1 %2 !==0){
-        console.log ("[НЕЧЕТНЫЕ ЧИСЛА - ЦИКЛ FOR]" ,number1);
+
+for (counter = 0; counter <= num1 ; counter++){
+
+    if (counter % 2 !== 0){
+        console.log ("[НЕЧЕТНЫЕ ЧИСЛА - ЦИКЛ FOR]" ,counter);
     }else{
     }
 }
 
 // 2.2) while:
 
-let number2 = 0;
+let num2 = 20;
+let coonter2 = 0;
 
-while (number2 < 20){
+while (coonter2 <= num2){
 
-    number2 ++;
+    coonter2++;
 
-    if(number2%2!=0){
-        console.log("[НЕЧЕТНЫЕ ЧИСЛА - ЦИКЛ WHILE]" ,number2);
+    if(coonter2 % 2 ===0){
+        console.log("[ЧЕТНЫЕ ЧИСЛА - ЦИКЛ WHILE]" , coonter2);
     }
     else{
     }
@@ -94,37 +98,10 @@ if (question == true){
             alert("Err...")
         }
 
-        // console.log(" Количество попыток сказать правду",i);
-
     }  console.log(" Количество попыток сказать правду",i);
        alert(" Количество попыток сказать правду.")
     
-    // while ( age != AGE || age === "" || age === null){
-    
-    //     i++;
-    
-    //     age = +prompt ("How old are you ?");
-    
-    //     if(age ===AGE){
-    //         console.log ("18 ask him about his age");
-    //         alert(age + " Как раз вовремя!");
-    //     }
-    
-    //     else if(age < AGE){
-    //         console.log ("[ < AGE ] " ,"Get over here");
-    //         alert(age + " Ты еще мал!");
-    //     }
-    
-    //     else if(age > AGE && age < 100){
-    //         console.log ("[ > AGE ] " ,"Get out of here");
-    //         alert(age + " Опоздал!");
-    //     }
-    //     else{
-    //         console.log (" [ Oups... ] ");
-    //         alert("Err... Уже вообще поздно!")
-    //     }
-    // }
-    // console.log ("[Количество вводов ] " + i);
+   
 }
 else{
     alert(" Ну ладно...")
@@ -132,45 +109,70 @@ else{
 
 // 4) Output every simple number from 2 to 10;
 
-let num = 10;
-let i;
-let j;
+// let num = 10;
+// let i;
+// let j;
 
-nextPrime:
+// nextPrime:
 
-for (i = 2; i <= num ; i++) {
+// for (i = 2; i <= num ; i++) {
 
-    for (j = 2 ; j < i ; j++){
-        if ((i % j == 0))
-        continue nextPrime;
+//     for (j = 2 ; j < i ; j++){
+//         if ((i % j == 0))
+//         continue nextPrime;
+//     }
+//     console.log(i);
+    
+// }
+
+// 4) Output every simple number from 2 to 10;
+
+let num = 10 ; 
+let i ;
+let j ;
+
+
+for (i = 2 ; i < num ; i++){
+    for(j = 2 ; j < i ; j++){
+
+        if(i % j === 0){
+            continue;
+        }
     }
-    console.log(i);
+    console.log("[простое число]" ,i);
 }
 
 // 5) Get number from user and get factorial of this number
 
-let isOn 
+let numberUser = +prompt (" Number? ")
 
-let userNum = +prompt(`${userName} , Скажи свое число.`);
-alert(userNum);
-
-while (userNum === "" || userNum === null  || userNum< 0) {
-    userNum = prompt(`${userName} , Скажи свое число.`);
+while(numberUser === "" || numberUser === null || numberUser === false || numberUser === NaN ){
+    numberUser = prompt ("Number?");
 }
 
-    // alert("Факториал равен :")
+let res = 1;
+let sum = 0;
+let radical;
+let square;
 
-function factorial(userNum){
+for ( i = numberUser ; i > 0 ; i--){
+    // if(i === 0) continue;
+    res *= i;
+    sum += i;
+    radical = Math.sqrt(numberUser);
+    square = numberUser*numberUser;
+} 
+console.log("[ФАКТОРИАЛ] " , res);
+console.log("[СУММА] " , sum);
+console.log("[КОРЕНЬ]" , radical);
+console.log("[КВАДРАТ]" , square);
 
-    let res = 1;
 
-    while(userNum--)
 
-    res *= userNum +1;
 
-    return res;
-}
-alert (factorial(userNum));
+
+
+
 
 
 
