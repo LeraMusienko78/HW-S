@@ -123,3 +123,44 @@ while (switcher2 === true) {
         alert("Error...");
     }
 }
+// 3. Запросіть у користувача тризначне число та перевірте чи є в ньому однакові цифри.
+// let switcher3:boolean =  true;
+// while (switcher3 === true){
+//     let userThreeDigitNumber :string  = prompt ("Введи трехзначное число.");
+//     console.log(userThreeDigitNumber);
+//     alert(userThreeDigitNumber);
+//     alert(userThreeDigitNumber.length);
+//     for(let i = 0; i < userThreeDigitNumber.length ; i++){
+//         console.log(userThreeDigitNumber[i]);
+//     }
+// }
+// 4. Запросіть у користувача рік та перевірте чи є він високо- сним. Високосний рік або кратний 400, або кратний 4 і при цьому не кратний 100.
+let switcher4 = true;
+while (switcher4 === true) {
+    let year = +prompt("Введите свой год рождения ");
+    if (year) {
+        if (year % 400 === 0 && year % 100 !== 0) {
+            alert("Год високосний");
+            console.log("Високосний ");
+        }
+        else if (year % 4 === 0) {
+            alert("Год високосний");
+            console.log("Високосний ");
+        }
+        else {
+            alert("Год не високосний.");
+            console.log("Обічній");
+        }
+        switcher4 = confirm("Хочешь выйти?");
+        if (switcher4) {
+            alert("Goodbay");
+            break;
+        }
+        // else{
+        //   year  = +prompt ("Введите свой год рождения ");
+        // }
+    }
+    else {
+        alert("Error...");
+    }
+}
