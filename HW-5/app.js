@@ -141,24 +141,61 @@ while (switcher4 === true) {
     if (year) {
         if (year % 400 === 0 && year % 100 !== 0) {
             alert("Год високосний");
-            console.log("Високосний ");
+            console.log("Высокосний ");
         }
         else if (year % 4 === 0) {
             alert("Год високосний");
-            console.log("Високосний ");
+            console.log("Высокосний ");
         }
         else {
-            alert("Год не високосний.");
-            console.log("Обічній");
+            alert("Год не высокосний.");
+            console.log("Обычный");
         }
-        switcher4 = confirm("Хочешь выйти?");
+        switcher4 = !confirm("Хочешь выйти?");
         if (switcher4) {
-            alert("Goodbay");
-            break;
         }
-        // else{
-        //   year  = +prompt ("Введите свой год рождения ");
-        // }
+        else {
+            alert("Goodbay...");
+        }
+    }
+    else {
+        alert("Error...");
+    }
+}
+// 6. Напишіть конвертор валют. Користувач вводить кількість USD, вибирає в яку валюту хоче перекласти: EUR, UAN або AZN, і отримує відповідну суму.
+// const chooseCurrenchy = prompt ("Какая у вас валюта? : 1) USD ; 2) EUR ; 3) TUG ");
+// const to = prompt ("Во что хотите перевести? 1) GRN ");
+// const amout = prompt ("Сколько денег перевести?");
+let switcher5 = true;
+while (switcher5 === true) {
+    const chooseCurrenchy = prompt("Какая у вас валюта? : 1) USD ; 2) EUR ; 3) TUG ");
+    const to = prompt("Во что хотите перевести? 1) GRN ");
+    const amoutOfMoney = prompt("Сколько денег перевести?");
+    switcher5 = confirm("Продолжим?");
+    const result = convert(chooseCurrenchy, to, amoutOfMoney);
+    alert(result);
+    console.log(result);
+    switcher5 = !confirm("Хочешь выйти?");
+    if (switcher5) {
+    }
+    else {
+        alert("Goodbay...");
+    }
+}
+function convert(current, after, amout) {
+    if (after === "1") {
+        if (current === "1") {
+            return +amout * 40;
+        }
+        else if (current === "2") {
+            return +amout * 45;
+        }
+        else if (current === "3") {
+            return +amout * 20;
+        }
+        else {
+            alert("Error...");
+        }
     }
     else {
         alert("Error...");
