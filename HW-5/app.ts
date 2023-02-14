@@ -47,65 +47,95 @@ while (switcher2 === true ){
     if(userNumber){
 
         switch(userNumber){
-            case 0 :
+
+            case 1 :
                 console.log ("!");
                 alert("!")
-                switcher = !confirm ("Хочешь выйти?");
+                switcher2 = !confirm ("Хочешь выйти?");
+                if(switcher2 ){
+                    break;
+                }
                 break;
-               
         
-            case 1 :
+            case 2 :
                 console.log ("@");
                 alert("@");
-                switcher = !confirm ("Хочешь выйти?");
+                switcher2 = !confirm ("Хочешь выйти?");
+                if(switcher2 ){
+                    break;
+                }
                 break;
                     
-            case 2 :
+            case 3 :
                 console.log ("#");
                 alert("#");
-                switcher = !confirm ("Хочешь выйти?");
-                break;
-        
-            case 3 :
-                console.log ("$");
-                alert("$");
-                switcher = !confirm ("Хочешь выйти?");
+                switcher2 = !confirm ("Хочешь выйти?");
+                if(switcher2 ){
+                    break;
+                }
                 break;
         
             case 4 :
-                console.log ("%");
-                alert("%");
-                switcher = !confirm ("Хочешь выйти?");
+                console.log ("$");
+                alert("$");
+                switcher2 = !confirm ("Хочешь выйти?");
+                if(switcher2 ){
+                    break;
+                }
                 break;
         
             case 5 :
+                console.log ("%");
+                alert("%");
+                switcher2 = !confirm ("Хочешь выйти?");
+                if(switcher2 ){
+                    break;
+                }
+                break;
+        
+            case 6 :
                 console.log ("^");
                 alert("^");
-                switcher = !confirm ("Хочешь выйти?");
+                switcher2 = !confirm ("Хочешь выйти?");
+                if(switcher2 ){
+                    break;
+                }
                 break;
         
-             case 6 :
+             case 7 :
                 console.log ("&");
                 alert("&");
-                switcher = !confirm ("Хочешь выйти?");
-                break;
-        
-            case 7 :
-                console.log ("*");
-                alert("*");
-                switcher = !confirm ("Хочешь выйти?");
+                switcher2 = !confirm ("Хочешь выйти?");
+                if(switcher2 ){
+                    break;
+                }
                 break;
         
             case 8 :
-                console.log ("(");
-                alert("(");
-                switcher = !confirm ("Хочешь выйти?");
+                console.log ("*");
+                alert("*");
+                switcher2 = !confirm ("Хочешь выйти?");
+                if(switcher2 ){
+                    break;
+                }
                 break;
         
             case 9 :
+                console.log ("(");
+                alert("(");
+                switcher2 = !confirm ("Хочешь выйти?");
+                if(switcher2 ){
+                    break;
+                }
+                break;
+        
+            case 0 :
                 console.log (")");
                 alert(")");
-                switcher = !confirm ("Хочешь выйти?");
+                switcher2 = !confirm ("Хочешь выйти?");
+                if(switcher2 ){
+                    break;
+                }
                 break;
         
         }
