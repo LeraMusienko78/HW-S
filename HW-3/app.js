@@ -59,7 +59,7 @@ alert(`${userName}  , очень приятно !` );
 
 let question  =  confirm (`${userName  } , cкажешь свой возраст?`);
 
-if (question == true){
+if (question === true){
 
     alert(" Ура ");
 
@@ -138,9 +138,10 @@ for (i = 2 ; i < num ; i++){
         if(i % j === 0){
             continue;
         }
+        console.log("[простое число]" ,i);
     }
-    console.log("[простое число]" ,i);
-}
+    }
+   
 
 // 5) Get number from user and get factorial of this number
 
@@ -156,7 +157,7 @@ let radical;
 let square;
 
 for ( i = numberUser ; i > 0 ; i--){
-    // if(i === 0) continue;
+    if(i === 0) continue;
     res *= i;
     sum += i;
     radical = Math.sqrt(numberUser);
