@@ -124,16 +124,29 @@ while (switcher2 === true) {
     }
 }
 // 3. Запросіть у користувача тризначне число та перевірте чи є в ньому однакові цифри.
-// let switcher3:boolean =  true;
-// while (switcher3 === true){
-//     let userThreeDigitNumber :string  = prompt ("Введи трехзначное число.");
-//     console.log(userThreeDigitNumber);
-//     alert(userThreeDigitNumber);
-//     alert(userThreeDigitNumber.length);
-//     for(let i = 0; i < userThreeDigitNumber.length ; i++){
-//         console.log(userThreeDigitNumber[i]);
-//     }
-// }
+let switcher3 = true;
+while (switcher3 === true) {
+    let userArr = prompt("Назови трехзначное число ");
+    if (userArr[0] === userArr[1] || userArr[0] === userArr[2] || userArr[1] === userArr[2]) {
+        console.log(`В числе ${userArr} есть одинаковые цифры`);
+        alert(`В числе ${userArr} есть одинаковые цифры.`);
+        switcher3 = !confirm("Хочешь выйти?");
+        if (switcher3) {
+        }
+        else {
+            alert("Goodbay!");
+        }
+    }
+    else {
+        alert(`В числе ${userArr} нет одинаковых цифр.`);
+        switcher3 = !confirm("Хочешь выйти?");
+        if (switcher3) {
+        }
+        else {
+            alert("Goodbay!");
+        }
+    }
+}
 // 4. Запросіть у користувача рік та перевірте чи є він високо- сним. Високосний рік або кратний 400, або кратний 4 і при цьому не кратний 100.
 let switcher4 = true;
 while (switcher4 === true) {
@@ -163,9 +176,6 @@ while (switcher4 === true) {
     }
 }
 // 6. Напишіть конвертор валют. Користувач вводить кількість USD, вибирає в яку валюту хоче перекласти: EUR, UAN або AZN, і отримує відповідну суму.
-// const chooseCurrenchy = prompt ("Какая у вас валюта? : 1) USD ; 2) EUR ; 3) TUG ");
-// const to = prompt ("Во что хотите перевести? 1) GRN ");
-// const amout = prompt ("Сколько денег перевести?");
 let switcher5 = true;
 while (switcher5 === true) {
     const chooseCurrenchy = prompt("Какая у вас валюта? : 1) USD ; 2) EUR ; 3) TUG ");
