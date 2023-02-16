@@ -44,7 +44,7 @@ while (switcher2 === true ){
 
     const userNumber : number = +prompt (" Введи число от 0 до 9 ");
 
-    if(userNumber){
+    // if(userNumber){
 
         switch(userNumber){
 
@@ -139,11 +139,11 @@ while (switcher2 === true ){
                 break;
         }
 
-    }
-    else{
-        console.log("Error...");
-        alert("Error...");
-    }
+    // }
+    // else{
+    //     console.log("Error...");
+    //     alert("Error...");
+    // }
 
 }
 

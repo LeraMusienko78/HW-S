@@ -34,94 +34,94 @@ while (switcher === true) {
 let switcher2 = true;
 while (switcher2 === true) {
     const userNumber = +prompt(" Введи число от 0 до 9 ");
-    if (userNumber) {
-        switch (userNumber) {
-            case 1:
-                console.log("!");
-                alert("!");
-                switcher2 = !confirm("Хочешь выйти?");
-                if (switcher2) {
-                    break;
-                }
+    // if(userNumber){
+    switch (userNumber) {
+        case 1:
+            console.log("!");
+            alert("!");
+            switcher2 = !confirm("Хочешь выйти?");
+            if (switcher2) {
                 break;
-            case 2:
-                console.log("@");
-                alert("@");
-                switcher2 = !confirm("Хочешь выйти?");
-                if (switcher2) {
-                    break;
-                }
+            }
+            break;
+        case 2:
+            console.log("@");
+            alert("@");
+            switcher2 = !confirm("Хочешь выйти?");
+            if (switcher2) {
                 break;
-            case 3:
-                console.log("#");
-                alert("#");
-                switcher2 = !confirm("Хочешь выйти?");
-                if (switcher2) {
-                    break;
-                }
+            }
+            break;
+        case 3:
+            console.log("#");
+            alert("#");
+            switcher2 = !confirm("Хочешь выйти?");
+            if (switcher2) {
                 break;
-            case 4:
-                console.log("$");
-                alert("$");
-                switcher2 = !confirm("Хочешь выйти?");
-                if (switcher2) {
-                    break;
-                }
+            }
+            break;
+        case 4:
+            console.log("$");
+            alert("$");
+            switcher2 = !confirm("Хочешь выйти?");
+            if (switcher2) {
                 break;
-            case 5:
-                console.log("%");
-                alert("%");
-                switcher2 = !confirm("Хочешь выйти?");
-                if (switcher2) {
-                    break;
-                }
+            }
+            break;
+        case 5:
+            console.log("%");
+            alert("%");
+            switcher2 = !confirm("Хочешь выйти?");
+            if (switcher2) {
                 break;
-            case 6:
-                console.log("^");
-                alert("^");
-                switcher2 = !confirm("Хочешь выйти?");
-                if (switcher2) {
-                    break;
-                }
+            }
+            break;
+        case 6:
+            console.log("^");
+            alert("^");
+            switcher2 = !confirm("Хочешь выйти?");
+            if (switcher2) {
                 break;
-            case 7:
-                console.log("&");
-                alert("&");
-                switcher2 = !confirm("Хочешь выйти?");
-                if (switcher2) {
-                    break;
-                }
+            }
+            break;
+        case 7:
+            console.log("&");
+            alert("&");
+            switcher2 = !confirm("Хочешь выйти?");
+            if (switcher2) {
                 break;
-            case 8:
-                console.log("*");
-                alert("*");
-                switcher2 = !confirm("Хочешь выйти?");
-                if (switcher2) {
-                    break;
-                }
+            }
+            break;
+        case 8:
+            console.log("*");
+            alert("*");
+            switcher2 = !confirm("Хочешь выйти?");
+            if (switcher2) {
                 break;
-            case 9:
-                console.log("(");
-                alert("(");
-                switcher2 = !confirm("Хочешь выйти?");
-                if (switcher2) {
-                    break;
-                }
+            }
+            break;
+        case 9:
+            console.log("(");
+            alert("(");
+            switcher2 = !confirm("Хочешь выйти?");
+            if (switcher2) {
                 break;
-            case 0:
-                console.log(")");
-                alert(")");
-                switcher2 = !confirm("Хочешь выйти?");
-                if (switcher2) {
-                    break;
-                }
+            }
+            break;
+        case 0:
+            console.log(")");
+            alert(")");
+            switcher2 = !confirm("Хочешь выйти?");
+            if (switcher2) {
                 break;
-        }
+            }
+            break;
     }
-    else {
-        console.log("Error...");
-        alert("Error...");
-    }
+    // }
+    // else{
+    //     console.log("Error...");
+    //     alert("Error...");
+    // }
 }
 // 3. Запросіть у користувача тризначне число та перевірте чи є в ньому однакові цифри.
 let switcher3 = true;
