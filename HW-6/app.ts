@@ -16,6 +16,8 @@ function palindrom(){
 
     while(switcher){
 
+        //  *** Не работают типы numbers ???? ***
+
         type numbers = 
         |"1"
         |"2"
@@ -107,8 +109,51 @@ function discountPurchse(){
 
 // 8. Запросіть у користувача довжину кола та периметр ква- драта. Визначте чи може таке коло поміститися у зазначе- ний квадрат.
 
-const circumference:number = +prompt ("Введи длину окружности");
-const perimeterOfTheSquare : number = +prompt("Введи периметр квадрата");
+
+inscribedCircle();
+
+function inscribedCircle(){
+
+    let switcher3: boolean = true ;
+
+    while(switcher3){
+
+        const circumference: number = +prompt ("Введи длину окружности"); 
+        const perimeterOfTheSquare: number = +prompt("Введи периметр квадрата");
+
+        radiusSide();
+
+        function radiusSide (){
+            let radiusCirc = circumference /(2 * Math.PI) ;
+             alert (`Radius = ${radiusCirc}`);
+
+            let sideOfASquare = perimeterOfTheSquare/4;
+             alert (`Side of square = ${sideOfASquare}`);
+
+             if( radiusCirc <=sideOfASquare/2){
+                alert("Окружность входит в квадрат.");
+
+                switcher3 = !confirm ("Хочешь выйти?");
+                if(switcher3 ){
+                }
+
+            }else{
+                alert("Окружность не вхотит в квадрат.")
+
+                switcher3 = !confirm ("Хочешь выйти?");
+                if(switcher3 ){
+                    
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+
 
 
 
