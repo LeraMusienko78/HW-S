@@ -150,6 +150,92 @@ function inscribedCircle(){
     }
 }
 
+// 9. Задайте користувачеві 3 питання, у кожному питанні по 3 варіанти відповіді. За кожну правильну відповідь нарахо- вується 2 бали. Після запитань виведіть користувачеві кількість набраних балів.
+
+
+test();
+ 
+function test(){
+
+    let switcher4 : boolean = true ;
+
+    while (switcher4){
+
+        const question1: string | null =  ("Сколько дней в неделе ?");
+        alert(question1);
+        const answerUser1 : string | null = prompt ("Выбрать один из вариантов : \n a) 7  \n b) 10 \n c) 3 ");
+        let res1 = answer1 (question1, answerUser1);
+        alert(res1);
+
+
+        const question2: string| null=  ("Сколько месяцев в году ?");
+        alert(question2);
+        const answerUser2 : string | null = prompt ("Выбрать один из вариантов : \n a) 24 \n b) 16 \n c) 12 ");
+        let res2 = answer2 (question2 , answerUser2);
+        alert (res2);
+
+        const question3: string| null =  ("Какой месяц в году самый короткий ?");
+        alert (question3);
+        const answerUser3 : string | null = prompt ("Выбрать один из вариантов : \n a) январь \n b) февраль \n c) март");
+        let res3 = answer3 (question3 , answerUser3) ;
+        alert (res3);
+
+    }
+}
+
+function answer1 (quest1 , answ1){
+
+    if(quest1){
+        if (answ1 === "a"){
+            return 2;
+        }else if("b" && "c"){
+            return 0;
+        }else{
+           alert("Error...");
+        }
+    }else{
+        alert("Error...");
+     }
+}
+
+function answer2 (quest2 , answ2){
+   
+
+    if(quest2){
+        if (answ2 === "c"){
+            return 2;
+        }else if("a" && "b"){
+            return 0;
+        }else{
+            alert("Error...");
+        }
+    } else{
+        alert("Error...");
+    }
+}
+
+function answer3 (quest3 , answ3){
+
+    if(quest3){
+        if (answ3 === "b"){
+            return 2;
+
+        }else if("a" && "c"){
+            return 0;
+
+        }else{
+            alert("Error...");
+        }
+    }else{
+        alert("Error...");
+     }
+}
+
+
+
+
+
+
 
 
 
