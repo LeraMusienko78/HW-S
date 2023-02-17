@@ -116,9 +116,14 @@ function inscribedCircle(){
 
     let switcher3: boolean = true ;
 
+
+
     while(switcher3){
 
+        // *** Почему не преобразовывает в числа? Ввожу буквы , пишет NaN  и пропускает дальше *** //
+
         const circumference: number = +prompt ("Введи длину окружности"); 
+
         const perimeterOfTheSquare: number = +prompt("Введи периметр квадрата");
 
         radiusSide();
@@ -153,6 +158,8 @@ function inscribedCircle(){
 // 9. Задайте користувачеві 3 питання, у кожному питанні по 3 варіанти відповіді. За кожну правильну відповідь нарахо- вується 2 бали. Після запитань виведіть користувачеві кількість набраних балів.
 
 
+
+
 test();
  
 function test(){
@@ -164,21 +171,41 @@ function test(){
         const question1: string | null =  ("Сколько дней в неделе ?");
         alert(question1);
         const answerUser1 : string | null = prompt ("Выбрать один из вариантов : \n a) 7  \n b) 10 \n c) 3 ");
-        let res1 = answer1 (question1, answerUser1);
+        let res1:number = +answer1 (question1, answerUser1);
         alert(res1);
 
 
         const question2: string| null=  ("Сколько месяцев в году ?");
         alert(question2);
         const answerUser2 : string | null = prompt ("Выбрать один из вариантов : \n a) 24 \n b) 16 \n c) 12 ");
-        let res2 = answer2 (question2 , answerUser2);
+        let res2:number = +answer2 (question2 , answerUser2);
         alert (res2);
 
         const question3: string| null =  ("Какой месяц в году самый короткий ?");
         alert (question3);
         const answerUser3 : string | null = prompt ("Выбрать один из вариантов : \n a) январь \n b) февраль \n c) март");
-        let res3 = answer3 (question3 , answerUser3) ;
+        let res3:number = +answer3 (question3 , answerUser3) ;
         alert (res3);
+
+        let sumRes:number = res1 + res2 + res3 ;
+       
+
+        if (sumRes === 6){
+            alert(`Вы набрали : ${sumRes}  баллов ! Вы супермозг`);
+        }else if (sumRes === 4){
+            alert(`Вы набрали : ${sumRes}  баллов ! Вам надо подучиться!`);
+        }else if (sumRes === 2){
+            alert(`Вы набрали : ${sumRes}  баллов ! Вам учиться многому!`);
+        }else{
+            alert(`Вы дурень !!! `)
+        }
+
+        switcher4 = !confirm ("Хочешь выйти?");
+        if(switcher4 ){
+            
+        }
+
+        // break;
 
     }
 }
@@ -188,29 +215,29 @@ function answer1 (quest1 , answ1){
     if(quest1){
         if (answ1 === "a"){
             return 2;
-        }else if("b" && "c"){
-            return 0;
-        }else{
-           alert("Error...");
-        }
-    }else{
-        alert("Error...");
-     }
-}
-
-function answer2 (quest2 , answ2){
-   
-
-    if(quest2){
-        if (answ2 === "c"){
-            return 2;
-        }else if("a" && "b"){
+        }else if(answ1 === "b" || answ1 === "c"){
             return 0;
         }else{
             alert("Error...");
         }
     } else{
-        alert("Error...");
+        // alert("Error...");
+    }
+   
+}
+
+function answer2 (quest2 , answ2){
+
+    if(quest2){
+        if (answ2 === "c"){
+            return 2;
+        }else if(answ2 === "a" || answ2 === "b"){
+            return 0;
+        }else{
+            alert("Error...");
+        }
+    } else{
+        // alert("Error...");
     }
 }
 
@@ -220,16 +247,18 @@ function answer3 (quest3 , answ3){
         if (answ3 === "b"){
             return 2;
 
-        }else if("a" && "c"){
+        }else if(answ3 === "a" || answ3 === "c" ){
             return 0;
 
         }else{
             alert("Error...");
         }
     }else{
-        alert("Error...");
+        // alert("Error...");
      }
 }
+
+
 
 
 
