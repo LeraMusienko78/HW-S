@@ -179,3 +179,19 @@ function answer3(quest3, answ3) {
         // alert("Error...");
     }
 }
+// 10. Запросіть дату (день,місяць,рік) і виведітьнаступну дату. Врахуйте можливість переходу на наступний місяць, рік, а також високосний рік.
+let switcher6 = true;
+while (switcher6) {
+    let dayUser = prompt("Введите число: ");
+    let monthUser = prompt("Введите месяц: ");
+    let yearUser = prompt("Введите год:");
+    switcher6 = !confirm("Хочешь выйти?");
+    if (switcher6) {
+    }
+    const data = {
+        day: dayUser,
+        month: monthUser,
+        year: yearUser,
+    };
+    console.log(data);
+}

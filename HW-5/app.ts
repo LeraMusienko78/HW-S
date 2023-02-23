@@ -201,9 +201,8 @@ while(switcher4 === true){
         else if( year % 4 === 0 ){
             alert("Год высокосний");
             console.log("Высокосний ");
-           
-           
         }
+        
         else{
             alert("Год не высокосний.");
             console.log("Обычный");
