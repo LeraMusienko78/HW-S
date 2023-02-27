@@ -30,27 +30,27 @@ function calculate (x, y, symbol){
     let result;
 
     switch (symbol){
-        case "+":
+        case "1":
         result = add(x, y);
-        alert(`${x} ${symbol} ${y} =  ${result}`);
+        alert(`${x} + ${y} =  ${result}`);
         console.log("[RESULT] " ,result);
         break;
 
-        case "-":
+        case "2":
         result = subtr(x, y);
-        alert(`${x} ${symbol} ${y} =  ${result}`);
+        alert(`${x} - ${y} =  ${result}`);
         console.log("[RESULT] " ,result);
         break
 
-        case "*":
+        case "3":
         result = multiply(x, y);
-        alert(`${x} ${symbol} ${y} =  ${result}`);
+        alert(`${x} * ${y} =  ${result}`);
         console.log("[RESULT] " ,result);
         break;
 
-        case "/":
+        case "4":
         result = div(x, y);
-        alert(`${x} ${symbol} ${y} =  ${result}`);
+        alert(`${x} / ${y} =  ${result}`);
         console.log("[RESULT] " ,result);
         break
 
