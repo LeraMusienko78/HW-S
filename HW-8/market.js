@@ -276,17 +276,20 @@ const users = [
 
 let user =  getUserrByID("494949", users);
 user = getUserrByID("363636", users) ;
-user = getUserrByID("474747", users) ;
+// user = getUserrByID("474747", users) ;
+// user = getUserrByID("555555", users);
 
 console.log(user);
 
 function getUserrByID (userID,arr){
 
     for(const user of arr){
-        
-        if(user.id === userID)
 
-        return user;
+        if(user.id === userID){
+            return user;
+        }else{
+        
+        }
     }
 }
 
