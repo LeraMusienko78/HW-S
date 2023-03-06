@@ -194,6 +194,7 @@
 
 // -----------------------------------------------------------------------------
 //         ********** HOMWORK ***********
+
 const allInOne = [];
 console.log("[ALL IN ONE]", allInOne);
 
@@ -299,14 +300,22 @@ allInOne.push(...auto.truck, ...auto.sedan);
 
 //* 4) Get from allInOne only truck , only sendan
 
-const getSedan = allInOne.filter(function (onlySedan,arr){
-   for(onlySedan of arr){
-    if(onlySedan.type === "Sedan"){
-        return onlySedan;
-    }
-   }
-});
-console.log(getSedan);
+//  4.1)
+const getTruck = allInOne.filter(typeTruck => typeTruck.type === "TRUCK");
+console.log("[GET TRUCK]", getTruck);
+//  4.2)
+const getSedan = allInOne.filter(typeSedan => typeSedan.type === "SEDAN");
+console.log("[GET SEDAN]", getSedan);
+
+
+
+
+
+
+
+      
+
+
 
 
  
