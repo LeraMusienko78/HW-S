@@ -66,15 +66,23 @@ console.log(getMedianaAge(students));
 
 // * 4) Write function which will be able to print to the console name of current user and his skills through the "*"
 
+// function getName(nameStudent){
+//     const student = students[nameStudent];
+//     const name = student.name;
 
-function printStudentNaneAndSkills(index){
-    const student = students[index];
-    const name = student.name;
-    const skills = student.skills.join(" * ");
-    console.log (name + " - " + skills);
-}
+//     console.log("[NAME]", name);
+// }
+// getName();
 
-printStudentNaneAndSkills(0);
+
+// function printStudentNaneAndSkills(index){
+//     const student = students[index];
+//     const name = student.name;
+//     const skills = student.skills.join(" * ");
+//     console.log (name + " - " + skills);
+// }
+
+// printStudentNaneAndSkills(0);
 
 
 
