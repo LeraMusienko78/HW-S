@@ -297,6 +297,8 @@ console.log("[COST OF ALL AUTO]", " *** " + result + " $");
 
 //* 3) Concat arr truck and sedan in allInOne
 
+
+
 allInOne.push(...auto.truck, ...auto.sedan);
 console.log(allInOne.length);
 
@@ -316,9 +318,30 @@ console.log("[ ELEMENT AT INDEX '1' ]" ,allInOne[1]);
 const newArr = allInOne.slice(0,3);
 console.log("[NEW ARR]", newArr);
 
-// 6) Вывести только названия авто:
+// 6) Вывести только названия a)авто, b)типы кузовов, c)количество колес во всех машинах:
 
-const arrLabel = allInOne.forEach( element => console.log(element.label));
+
+// a)
+const arrLabel = allInOne.map( element => console.log(element.label));
+
+// b)
+
+const arrType = allInOne.map(function(typeArr){
+     return typeArr.type;
+});
+console.log(arrType);
+
+// c)
+
+const callWheels = allInOne.reduce(function(sum, allInOne){
+  return sum + allInOne.wheels;
+},0);
+console.log(" [ СУММА КОЛЕС ВО ВСЕХ МАШИНАХ ] ",callWheels);
+
+
+
+
+
 
 
 
