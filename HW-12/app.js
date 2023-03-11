@@ -2,7 +2,9 @@
 
 let isRunning = true;
 
-const users = [];
+const users = [
+   
+];
 
 console.log("[USERS]",users);
 
@@ -63,13 +65,23 @@ while (isRunning){
         case "c":
 
         if(users.length === 0){
-            console.log("Пользователей еще нет");
-        }else{
-            console.log("Список пользователей: ");
+            console.error("Пользователей еще нет");
+        }
+        
+        console.log("[КОЛИЧЕСТВО ПОЛЬЗОВАТЕЛЕЙ]", users.length);
+        for(const user of users){
+
+            console.log("Имя пользователя:" , user.username);
+            console.log("Фамилия пользователя:" , user.surname);
+            console.log("-------------------");
         }
 
-        console.log("[КОЛИЧЕСТВО ПОЛЬЗОВАТЕЛЕЙ]", users.length);
-
+        isRunning = !confirm("Хочешь выйти?");
+        if(isRunning){
+            
+        }else{
+            alert("Gootbay...")
+        }
        
         break;
 
