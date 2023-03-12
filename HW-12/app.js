@@ -34,7 +34,7 @@ while (isRunning){
 
             newUser = register(newUserName, newUserSurname, newUserAge, newUserEmail,
                 newUserPassword);
-                
+
             console.log("Добавлен новый пользователь.")   
             console.log( newUser) ; 
 
@@ -42,7 +42,7 @@ while (isRunning){
             if(isRunning){
                 
             }else{
-                alert("Gootbay...");
+                alert("Goodbay...");
             }
         break;
 
@@ -59,7 +59,7 @@ while (isRunning){
         if(isRunning){
             
         }else{
-            alert("Gootbay...");
+            alert("Goodbay...");
         }
         break;
 
