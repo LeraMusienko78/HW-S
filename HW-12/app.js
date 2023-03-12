@@ -2,9 +2,7 @@
 
 let isRunning = true;
 
-const users = [
-   
-];
+const users = [];
 
 console.log("[USERS]",users);
 
@@ -85,17 +83,29 @@ while (isRunning){
         break;
 
         case "d":
+        
+        users[1].nameUser = prompt ("Введите другое имя:");
+        users[1].surname = prompt ("ВВедите другую фамилию:");
+        users[1].age = prompt ("Введите другой возраст:");
+        
+        alert("Вы изменили  пользователя под индексом 1");
+        console.log(users);
 
+        isRunning = !confirm("Хочешь выйти?");
+        if(isRunning){
+            
+        }else{
+            alert("Gootbay...");
+        }
+       
         break;
 
         case "q":
 
         isRunning = false;
-        alert(" Всего хорошего , приходите еще !")
+        alert(" Всего хорошего , приходите еще !");
 
         break;
-
-        
     }
 }
 
