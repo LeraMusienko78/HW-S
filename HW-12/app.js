@@ -8,21 +8,20 @@ const users = [
 
 console.log("[USERS]",users);
 
-
-
 while (isRunning){
 
-   
-
-    alert("Hello muy frend!!!");
+    alert("Привет, для продолжения необходимо выбрать пункт:");
 
     const userChoouse = prompt (`
     a) Register
     b) Login
     c) View a list of all users
     d) Change user data
-    e) Exit
+    q) Exit
     `);
+    if(userChoouse != "a" && userChoouse != "b" && userChoouse !="c" && userChoouse != "d" && userChoouse != "q"){
+        alert("Необходимо выбрать один из пунктов : a), b), c), d), q) ")
+    }
 
     switch (userChoouse){
 
@@ -35,13 +34,15 @@ while (isRunning){
 
             newUser = register(newUserName, newUserSurname, newUserAge, newUserEmail,
                 newUserPassword);
-            console.log(newUser) ; 
+                
+            console.log("Добавлен новый пользователь.")   
+            console.log( newUser) ; 
 
             isRunning = !confirm("Хочешь выйтти?");
             if(isRunning){
                 
             }else{
-                alert("Gootbay...")
+                alert("Gootbay...");
             }
         break;
 
@@ -58,7 +59,7 @@ while (isRunning){
         if(isRunning){
             
         }else{
-            alert("Gootbay...")
+            alert("Gootbay...");
         }
         break;
 
@@ -71,8 +72,7 @@ while (isRunning){
         console.log("[КОЛИЧЕСТВО ПОЛЬЗОВАТЕЛЕЙ]", users.length);
         for(const user of users){
 
-            console.log("Имя пользователя:" , user.username);
-            console.log("Фамилия пользователя:" , user.surname);
+            console.log("[NAME:]", user.nameUser, "[SURNAME:]", user.surname, "[AGE:]", user.age);
             console.log("-------------------");
         }
 
@@ -82,16 +82,16 @@ while (isRunning){
         }else{
             alert("Gootbay...")
         }
-       
         break;
 
         case "d":
 
         break;
 
-        case "e":
+        case "q":
 
         isRunning = false;
+        alert(" Всего хорошего , приходите еще !")
 
         break;
 
@@ -121,6 +121,7 @@ function getLogin(email, password, arr){
     }
     if(!isLoggedIn){
         console.error("Пользователь не найден, зарегистрируйтесь пожалуйста");
+        alert("Пользователь не найден, зарегистрируйтесь пожалуйста");
         return null;
     }
 }
