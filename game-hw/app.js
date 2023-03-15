@@ -52,7 +52,6 @@ while(isRunning){
     `)
 
     const queue= random();
-    
 
     switch (userPick.toLowerCase()){
         case "a":
@@ -94,23 +93,12 @@ while(isRunning){
 function battle (hero,machine, queue ){
 
     if(queue === "hero"){
-        while (hero.hp > 0 || machine.hp > 0) {
-            hero.hp -= machine.damage;
-            machine.hp -= hero.damage;
-      
-            console.log("[MACHINE_HP]", machine.hp);
-            console.log("[HERO_HP]", hero.hp);
-        }
+        attackHero(hero,machine);
     }
 
     else{
-        while (hero.hp > 0 || machine.hp > 0) {
-            machine.hp -= hero.damage;
-            hero.hp -= machine.damage;
-      
-            console.log("[HERO_HP]", hero.hp);
-            console.log("[MACHINE_HP]", machine.hp);
-        }
+        attackMachine(hero, machine);
+       
     }
 }
 
@@ -122,4 +110,23 @@ function random (){
     return "bot";
 }
 
+function attackHero (hero, machine){
 
+    while (hero.hp > 0 || machine.hp > 0) {
+        hero.hp -= machine.damage;
+        machine.hp -= hero.damage;
+  
+        console.log("[MACHINE_HP]", machine.hp);
+        console.log("[HERO_HP]", hero.hp);
+    }
+}
+
+function attackMachine(hero, machine){
+    while (hero.hp > 0 || machine.hp > 0) {
+        machine.hp -= hero.damage;
+        hero.hp -= machine.damage;
+  
+        console.log("[HERO_HP]", hero.hp);
+        console.log("[MACHINE_HP]", machine.hp);
+    }
+}
