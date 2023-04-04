@@ -25,6 +25,7 @@ export  class  Customer {
     set password(password){
         this.#password = password;
     }
-
 }
+
+
 

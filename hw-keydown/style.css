@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+
+}
+
+.highlight {
+    background-color:green;
+}
+
+.focus {
+    border: 2px solid rgb(170, 11, 75);
+}
+
+
+  
+  

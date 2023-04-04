@@ -1,15 +1,15 @@
-export class Customer {
-    constructor(option) {
-      const { name, money } = option;
-      this.name = name;
-      this.money = money;
-    }
+// export class Customer {
+//     constructor(option) {
+//       const { name, money } = option;
+//       this.name = name;
+//       this.money = money;
+//     }
   
-    get customerMoney() {
-      return this.money;
-    }
+//     get customerMoney() {
+//       return this.money;
+//     }
   
-    set currentBalance(money) {
-      this.money = money;
-    }
-  }
+//     set currentBalance(money) {
+//       this.money = money;
+//     }
+//   }

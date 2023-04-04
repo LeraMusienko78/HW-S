@@ -1,0 +1,59 @@
+#gridWrap{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 120px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+
+.header{
+    background: red;
+    width: 150px;
+    height: 150px;
+}
+
+.main{
+    background: blue;
+    width: 150px;
+    height: 150px;
+}
+
+.aside{
+    background: yellow;
+    width: 150px;
+    height: 150px;
+    pointer-events: none;
+}
+
+#app{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-left: 100px;
+}
+
+.big{
+   width: 120px;
+   border: 2px solid red;
+}
+.smoll{
+    width: 80px;
+    border: 2px solid red;
+}
+
+.img{
+    width: 200px;
+    height: 300px;
+    display: flex;
+   
+}
+
+#section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+

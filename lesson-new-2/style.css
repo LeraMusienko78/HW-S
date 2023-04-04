@@ -1,0 +1,50 @@
+body{
+    height: 100vh;
+}
+
+/* .input-textarea-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+} */
+
+/* div{
+    width: 100px;
+    height: 200px;
+    background: aqua;
+    position: fixed;
+    left: -90px;
+    transform: 0,5s;
+}
+
+div.open{
+    left:10px;
+} */
+
+/* .header{
+    background: magenta;
+    height: 50px;
+}
+
+.section{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.aside{
+    background: yellow;
+    height: 50px;
+}
+
+.main{
+    background: gray;
+    height: 50px;
+}
+
+footer{
+    background: darkmagenta;
+    height: 50px;
+} */
