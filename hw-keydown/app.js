@@ -1,6 +1,7 @@
 
 
 const word = document.getElementById("word").textContent;
+console.log("[WORD]", word);
 const input = document.getElementById("input");
 const counter = document.getElementById("counter");
 
@@ -9,10 +10,9 @@ let mistakesCount = 0;
 
 input.addEventListener('keydown', (event) => {
   if (event.key === "Tab") {
-    event.preventDefault();
+    // event.preventDefault();
     input.classList.toggle("focus");
-  } else if (event.key === word[currentIndex]) {
-    console.log("[CURRENTINDEX]", currentIndex);
+  } else if (event.key === word[currentIndex].toString().toLowerCase()) {
     event.preventDefault();
     currentIndex++;
     input.value = "";
@@ -28,8 +28,8 @@ input.addEventListener('keydown', (event) => {
 
 function highlightCurrentLetter() {
   const letters = word.split("");
-  console.log("[LETTERS]", letters);
-  letters[currentIndex] = `<p class="highlight">${letters[currentIndex]}</p>`;
+  letters[currentIndex-1] = `<i class="highlight">${letters[currentIndex-1]}</i>`;
   const highlightedWord = letters.join("");
+  console.log(currentIndex-1);
   document.getElementById("word").innerHTML = highlightedWord;
 }
