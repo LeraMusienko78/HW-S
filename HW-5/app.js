@@ -176,6 +176,7 @@ while (switcher4 === true) {
     }
 }
 // 6. Напишіть конвертор валют. Користувач вводить кількість USD, вибирає в яку валюту хоче перекласти: EUR, UAN або AZN, і отримує відповідну суму.
+
 let switcher5 = true;
 while (switcher5 === true) {
     const chooseCurrenchy = prompt("Какая у вас валюта? : 1) USD ; 2) EUR ; 3) TUG ");

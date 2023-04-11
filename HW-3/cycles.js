@@ -65,21 +65,43 @@
 //     }console.log(i);
 // } 
 
-let isOn = true;
+// let isOn = true;
 
-while(isOn){
+// while(isOn){
 
-    let number = +prompt ("назови число");
+//     let number = +prompt ("назови число");
 
-    if ( number != NaN ){
+//     if ( number != NaN ){
 
-        // console.log(number);
-        isOn = true;
+//         // console.log(number);
+//         isOn = true;
 
-    }else{
-        console.log(number);
-    }
+//     }else{
+//         console.log(number);
+//     }
+// }
+
+// let isRuning = true;
+
+// while(isRuning){
+
+//     let duck = prompt ("Slovo?");
+//     if(duck==="duck"){
+//         alert("UHU-HU");
+//     }else{
+//         alert("Error");
+//     }
+// }
+
+while(prompt()!=='duck'){
+    alert('enter duck');
 }
+
+
+
+
+
+
 
 
 

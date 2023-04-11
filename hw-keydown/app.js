@@ -10,7 +10,7 @@ let mistakesCount = 0;
 
 input.addEventListener('keydown', (event) => {
   if (event.key === "Tab") {
-    // event.preventDefault();
+    event.preventDefault();
     input.classList.toggle("focus");
   } else if (event.key === word[currentIndex].toString().toLowerCase()) {
     event.preventDefault();
@@ -32,4 +32,5 @@ function highlightCurrentLetter() {
   const highlightedWord = letters.join("");
   console.log(currentIndex-1);
   document.getElementById("word").innerHTML = highlightedWord;
+  console.log(highlightedWord);
 }

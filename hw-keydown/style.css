@@ -12,11 +12,9 @@
     
 }
 
-
-
-/* .focus {
-    border: 2px solid rgb(170, 11, 75);
-} */
+.focus {
+    border-color:  rgb(170, 11, 75);
+}
 
 
   

@@ -10,8 +10,11 @@ document.addEventListener('keydown' ,(event) =>{
 
 // ----------------- 2) ------------------- //
 
-function updateValue(value) {
-    document.getElementById("output").innerHTML = value;
+function updateValue(event) {
+    document.getElementById("output").innerHTML = event;
+    event.preventDefault();
+    input.classList.toggle("tab");
+
 };
 
 // ----------------- 3) ------------------- //
@@ -21,6 +24,8 @@ document.addEventListener('keydown', (event)=>{
         event.preventDefault();
     }
 });
+
+// ----------------- 4) ------------------- //
 
 const img = document.getElementById('image');
 
